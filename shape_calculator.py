@@ -47,4 +47,24 @@ class Rectangle:
         # Return Value
         return temp1 // temp2
         
-#class Square:
+class Square(Rectangle):
+    
+    def __init__(self, side):
+        self.width = side
+        self.height = side
+    
+    def __str__(self):
+        return f'Square(side={self.width})'
+    
+    def set_side(self, side):
+        self.width = side
+        self.height = side
+    
+    def set_width(self, w):
+        self.width = w
+        self.height = w
+    
+    def set_height(self, h):
+        self.height = h
+        self.height = h
+    
