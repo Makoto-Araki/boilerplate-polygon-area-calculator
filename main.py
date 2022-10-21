@@ -2,10 +2,23 @@
 import shape_calculator
 from unittest import main
 
+''' __str__
+rect = shape_calculator.Rectangle(5, 3)
+print(rect)
+'''
+
+''' get_amount_inside
+rect1 = shape_calculator.Rectangle(10, 20)
+rect2 = shape_calculator.Rectangle(5, 5)
+print(rect1.get_amount_inside(rect2))
+'''
+
+''' get_picture
 rect = shape_calculator.Rectangle(5, 3)
 print(rect.get_picture())
-
 '''
+
+''' Original Code
 rect = shape_calculator.Rectangle(5, 10)
 print(rect.get_area())
 rect.set_width(3)

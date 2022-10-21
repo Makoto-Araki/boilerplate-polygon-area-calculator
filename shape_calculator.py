@@ -4,6 +4,9 @@ class Rectangle:
         self.width = w
         self.height = h
     
+    def __str__(self):
+        return f'Rectangle(width={self.width}, height={self.height})'
+    
     def set_width(self, w):
         self.width = w
     
@@ -36,5 +39,12 @@ class Rectangle:
         return return_str
         
     def get_amount_inside(self, rect):
-        //
+        
+        # get_area()
+        temp1 = self.get_area()
+        temp2 = rect.get_area()
+        
+        # Return Value
+        return temp1 // temp2
+        
 #class Square:
